@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bruno Martins — IT Specialist & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="nav-logo">BM_</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="hero-badge"><i class="fas fa-circle-check"></i> Available for opportunities</div>
+  <h1 class="hero-name">Bruno <em>Martins</em></h1>
+  <p class="hero-subtitle">IT Specialist · Network Infrastructure · Frontend Developer · Based in Dublin 🇮🇪</p>
+  <div class="hero-cta">
+    <a href="#experience" class="btn btn-primary"><i class="fas fa-briefcase"></i> View Experience</a>
+    <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Get in Touch</a>
+  </div>
+  <div class="hero-scroll">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="section-label">01 — About</div>
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <div class="about-photo-placeholder">
+          <i class="fas fa-user"></i>
+        </div>
+        <div class="about-photo-badge">
+          <div class="badge-num">10+</div>
+          <div class="badge-label">Years of experience</div>
+        </div>
+      </div>
+      <div class="about-text reveal reveal-delay-1">
+        <h2 class="section-title" style="margin-bottom:20px">Solving tech,<br><em style="font-style:italic;color:var(--accent)">one system at a time.</em></h2>
+        <p>IT Specialist with extensive experience in network infrastructure, server management, and Group Policy Object (GPO) administration. I thrive in dynamic environments where technology meets real-world problems.</p>
+        <p>Skilled in troubleshooting, optimizing IT environments, and providing technical support — with a complementary background in frontend development that lets me bridge infrastructure and user experience.</p>
+        <div class="skills-chips">
+          <span class="chip"><i class="fas fa-network-wired"></i> Network Infrastructure</span>
+          <span class="chip"><i class="fas fa-server"></i> Windows Server</span>
+          <span class="chip"><i class="fas fa-shield-halved"></i> Cybersecurity</span>
+          <span class="chip"><i class="fas fa-users-gear"></i> Active Directory</span>
+          <span class="chip"><i class="fas fa-code"></i> Frontend Dev</span>
+          <span class="chip"><i class="fas fa-vpn-key"></i> VPN Management</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">02 — Experience</div>
+    <h2 class="section-title">Career<br>Journey</h2>
+    <div class="jobs-grid">
+
+      <!-- Vantage -->
+      <article class="job-card reveal" onclick="openModal('vantage')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#e8f0fe;color:#0071e3;"><i class="fas fa-headset"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">Vantage</div>
+        <div class="job-title">IT Support Specialist</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> Apr 2023 — Present</div>
+        <div class="job-preview">Providing end-user technical support, managing IT infrastructure and supporting onboarding processes across the organisation.</div>
+        <div class="job-tags">
+          <span class="job-tag">Support</span>
+          <span class="job-tag">Infrastructure</span>
+          <span class="job-tag">Deployment</span>
+        </div>
+      </article>
+
+      <!-- ICOT College -->
+      <article class="job-card reveal reveal-delay-1" onclick="openModal('icot')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#e9fae9;color:#16a34a;"><i class="fas fa-university"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">ICOT College Ireland</div>
+        <div class="job-title">IT Specialist</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> Dec 2020 — Aug 2025</div>
+        <div class="job-preview">Managed GPOs, Windows Servers, Active Directory, DNS/DHCP, VPNs and full network infrastructure for a college environment.</div>
+        <div class="job-tags">
+          <span class="job-tag">GPO</span>
+          <span class="job-tag">Active Directory</span>
+          <span class="job-tag">VPN</span>
+          <span class="job-tag">CCTV</span>
+        </div>
+      </article>
+
+      <!-- Website 365 -->
+      <article class="job-card reveal reveal-delay-2" onclick="openModal('website365')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#fef3c7;color:#d97706;"><i class="fas fa-code"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">Website 365</div>
+        <div class="job-title">Frontend Developer</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> Jun 2021 — May 2023</div>
+        <div class="job-preview">Developed and maintained client-facing web solutions, building responsive, modern interfaces.</div>
+        <div class="job-tags">
+          <span class="job-tag">HTML/CSS</span>
+          <span class="job-tag">JavaScript</span>
+          <span class="job-tag">Responsive</span>
+        </div>
+      </article>
+
+      <!-- Brainnest -->
+      <article class="job-card reveal reveal-delay-3" onclick="openModal('brainnest')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#fce7f3;color:#db2777;"><i class="fas fa-brain"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">Brainnest · Berlin</div>
+        <div class="job-title">Frontend Dev Trainee</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> Aug 2022 — Sep 2022</div>
+        <div class="job-preview">Industry training programme focused on real-world frontend development practices in Berlin.</div>
+        <div class="job-tags">
+          <span class="job-tag">Training</span>
+          <span class="job-tag">Frontend</span>
+          <span class="job-tag">Industry</span>
+        </div>
+      </article>
+
+      <!-- Istanbel Buffet -->
+      <article class="job-card reveal" onclick="openModal('istanbel')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#fdf2f8;color:#9d174d;"><i class="fas fa-utensils"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">Istanbel Buffet House</div>
+        <div class="job-title">Restaurant Manager</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> May 2017 — Aug 2020</div>
+        <div class="job-preview">Led daily operations, managed staff and ensured a high-quality dining experience for customers.</div>
+        <div class="job-tags">
+          <span class="job-tag">Management</span>
+          <span class="job-tag">Operations</span>
+          <span class="job-tag">Leadership</span>
+        </div>
+      </article>
+
+      <!-- Goldentech -->
+      <article class="job-card reveal reveal-delay-1" onclick="openModal('goldentech')">
+        <div class="job-card-header">
+          <div class="job-icon" style="background:#fffbeb;color:#b45309;"><i class="fas fa-screwdriver-wrench"></i></div>
+          <div class="job-card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="job-company">Goldentech · São Paulo</div>
+        <div class="job-title">IT Technician</div>
+        <div class="job-period"><i class="fas fa-calendar-alt"></i> Aug 2014 — Feb 2017</div>
+        <div class="job-preview">Hands-on hardware and software support, maintenance and repair in a fast-paced technical environment in Brazil.</div>
+        <div class="job-tags">
+          <span class="job-tag">Hardware</span>
+          <span class="job-tag">Repair</span>
+          <span class="job-tag">Maintenance</span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- GITHUB BANNER -->
+<div class="github-banner-section">
+  <div class="section-inner">
+    <div class="github-banner reveal">
+      <div class="github-banner-inner">
+        <div class="github-banner-left">
+          <div class="github-banner-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div class="github-banner-title">bruno4012 on GitHub</div>
+            <div class="github-banner-sub">Check out my code, side projects & contributions</div>
+          </div>
+        </div>
+        <a href="https://github.com/bruno4012" target="_blank" class="btn btn-github">
+          <i class="fab fa-github"></i> Open GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <div class="section-label">03 — Education</div>
+    <h2 class="section-title">Academic<br>Background</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-school">Griffith College Dublin</div>
+        <div class="edu-degree">Computing Science BSc (Hons)</div>
+        <div class="edu-period">2019 — 2023</div>
+      </div>
+      <div class="edu-card reveal reveal-delay-1">
+        <div class="edu-icon"><i class="fas fa-laptop-code"></i></div>
+        <div class="edu-school">Colégio Anchieta</div>
+        <div class="edu-degree">Técnico de Informática</div>
+        <div class="edu-period">2013 — 2015</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label">04 — Contact</div>
+    <h2 class="section-title">Let's Build<br>Something Together</h2>
+    <p class="contact-subtitle">Whether it's a new challenge, a collaboration, or just a conversation — my inbox is always open.</p>
+    <div class="contact-links">
+      <a href="tel:0899870236" class="contact-card">
+        <div class="contact-card-icon" style="background:rgba(0,113,227,.15);color:#5ac8fa"><i class="fas fa-phone"></i></div>
+        <div>
+          <div class="contact-card-label">Phone</div>
+          <div class="contact-card-value">089 987 0236</div>
+        </div>
+      </a>
+      <a href="mailto:brunoo.martins00@gmail.com" class="contact-card">
+        <div class="contact-card-icon" style="background:rgba(234,67,53,.15);color:#ea4335"><i class="fas fa-envelope"></i></div>
+        <div>
+          <div class="contact-card-label">Email</div>
+          <div class="contact-card-value">brunoo.martins00</div>
+        </div>
+      </a>
+      <a href="https://www.linkedin.com/in/brunoomartins00" target="_blank" class="contact-card">
+        <div class="contact-card-icon" style="background:rgba(0,119,181,.15);color:#0a66c2"><i class="fab fa-linkedin"></i></div>
+        <div>
+          <div class="contact-card-label">LinkedIn</div>
+          <div class="contact-card-value">brunoomartins00</div>
+        </div>
+      </a>
+      <a href="https://mbruno.me" target="_blank" class="contact-card">
+        <div class="contact-card-icon" style="background:rgba(88,196,220,.15);color:#38bdf8"><i class="fas fa-globe"></i></div>
+        <div>
+          <div class="contact-card-label">Portfolio</div>
+          <div class="contact-card-value">mbruno.me</div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2024 Bruno Martins — Built with care in Dublin 🇮🇪</p>
+</footer>
+
+<!-- MODAL OVERLAY -->
+<div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
+  <div class="modal" id="modal">
+    <div class="modal-hero" id="modalHero"></div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
