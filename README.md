@@ -20,19 +20,7 @@ website portfolio/
 - **Education** — Academic qualifications
 - **Contact** — Phone, email, LinkedIn, and portfolio links
 
-## Usage
 
-Open `index.html` in any modern browser — no build step or dependencies required.
-
-For local development with live reload, you can use any static file server:
-
-```bash
-# Node.js
-npx serve .
-
-# Python
-python -m http.server 8080
-```
 
 ## Tech Stack
 
